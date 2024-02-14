@@ -17,4 +17,23 @@ class Ship {
     }
 }
 
-export { Ship }
+class Player {
+    constructor(turn, score) {
+        this.turn = false
+        this.score = 0
+    }
+    checkScore() {
+        return this.score
+    }
+    checkTurn() {
+        return this.turn
+    }
+    setScore() {
+        this.score += 1
+    }
+    setTurn() {
+        this.turn = true
+    }
+}
+
+export { Ship, Player }
